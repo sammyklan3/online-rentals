@@ -4,6 +4,11 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  --primary-color: #3A86FF;
+  --gold-color: #FFBE0B;
+  --orange-red: #FB5607;
+  --pink-color: #FF006E;
+  --purple-color: #8338EC;
 }
 
 *, html, body {
