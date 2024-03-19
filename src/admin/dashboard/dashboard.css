@@ -1,0 +1,81 @@
+.dashboard-container {
+    padding: 1em 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.dashboard-container main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.dashboard-container .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header p {
+    background-color: var(--lightgray);
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.header p:hover {
+    background-color: var(--darkgray);
+}
+
+.smallbar ul{
+    display: flex;
+    gap: 10px;
+}
+
+.smallbar a {
+    text-decoration: none;
+    color: var(--gray-text);
+}
+
+.smallbar a:active {
+    color: black;
+}
+
+.list-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--lightgray);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.list-space-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-space a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--purple-color);
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.list-space a:hover {
+    background-color: var(--primary-color);
+}
+
+.list-space-item p {
+    font-weight: 700;
+}
+
+.list-space-item small {
+    color: var(--gray-text);
+}

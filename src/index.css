@@ -9,6 +9,9 @@
   --orange-red: #FB5607;
   --pink-color: #FF006E;
   --purple-color: #8338EC;
+  --lightgray: #c5c2c2;
+  --darkgray: #afadad;
+  --gray-text: #7a7878;
 }
 
 *, html, body {
