@@ -63,7 +63,7 @@
     text-decoration: none;
     color: white;
     background-color: var(--purple-color);
-    padding: 5px;
+    padding: 1em;
     border-radius: 10px;
     transition: background-color 0.3s ease-in-out;
 }
@@ -78,4 +78,46 @@
 
 .list-space-item small {
     color: var(--gray-text);
+    font-size: 15px;
+}
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.reservation ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1em;
+}
+
+.reservation li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.reservation-item {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.reservation-item img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.reservation li:hover {
+    background-color: var(--lightgray);
+    border-radius: 10px;
+    /* transform: scale(1.01); */
 }
