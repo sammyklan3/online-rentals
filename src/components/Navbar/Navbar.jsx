@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useState } from 'react';
 import "./navbar.css";
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 // import { AuthContext } from '../../context/authContext';

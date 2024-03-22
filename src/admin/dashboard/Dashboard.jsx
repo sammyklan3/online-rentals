@@ -38,7 +38,7 @@ export const Dashboard = () => {
             <small>It&apos;s quick and easy to add your first listing. Just follow the steps and you&apos;ll be ready to start hosting in no time</small>
           </section>
 
-          <NavLink to="#">Create a new listing</NavLink>
+          <NavLink to="/admin/create">Create a new listing</NavLink>
         </section>
 
         <section className="reservation">

@@ -1,0 +1,47 @@
+/* ListingForm.css */
+
+.listing-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .checkbox-container {
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .submit-btn {
+    background-color: var(--purple-color);
+    color: white;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    border-radius: 4px;
+    padding: 10px 20px;
+    float: right;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--primary-color);
+  }
+  

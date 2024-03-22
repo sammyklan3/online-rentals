@@ -5,13 +5,14 @@
   font-weight: 400;
   font-style: normal;
   --primary-color: #3A86FF;
-  --gold-color: #FFBE0B;
+  --gold-color: #dfdb0a;
   --orange-red: #FB5607;
   --pink-color: #FF006E;
   --purple-color: #8338EC;
   --lightgray: #d6d5d5;
   --darkgray: #c7c6c6;
   --gray-text: #7a7878;
+  --green-color: #00a86b;
 }
 
 *, html, body {

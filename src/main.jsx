@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import { Home } from './pages/home/Home';
 import { Dashboard } from './admin/dashboard/Dashboard';
 import { Error } from './pages/error/Error';
+import AddListingPage from './admin/create/AddListingPage';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/admin",
     element: (<Dashboard />)
+  },
+  {
+    path: "/admin/create",
+    element: (<AddListingPage />)
   },
 
   {
