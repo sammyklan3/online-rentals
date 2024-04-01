@@ -5,29 +5,43 @@ import { Home } from './pages/home/Home';
 import { Dashboard } from './admin/dashboard/Dashboard';
 import { Error } from './pages/error/Error';
 import AddListingPage from './admin/create/AddListingPage';
+import { UserManagement } from './admin/users/UserManagement';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { Listings } from './admin/Listings/Lisitings';
+import { Bookings } from './admin/bookings/Bookings';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (<Home />),
+    element: <Home />,
   },
 
   {
     path: "/admin",
-    element: (<Dashboard />)
+    element: <Dashboard />
   },
   {
     path: "/admin/create",
-    element: (<AddListingPage />)
+    element: <AddListingPage />
   },
-
+  {
+    path: "/admin/users",
+    element: <UserManagement />
+  },
+  {
+    path: "/admin/listings",
+    element: <Listings />
+  },
+  {
+    path: "/admin/bookings",
+    element: <Bookings />
+  },
   {
     path: "*",
-    element: (<Error />),
+    element: <Error />,
   }
 ]);
 

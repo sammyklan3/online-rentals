@@ -1,0 +1,114 @@
+.lisitings-container {
+    padding: 10px 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.lisitings-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.listing-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.listing-item-content {
+    display: flex;
+    gap: 1em;
+}
+
+.listing-item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.listing-item p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.listing-item img {
+    height: 20rem;
+    width: 30rem;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.listing-item-image {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.listing-item-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.listing-item-actions a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    background-color: var(--orange-red);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.listing-item-actions button {
+    padding: 0.8em 1em;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    gap: 5px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: var(--red-color);
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+    .lisitings-container {
+        padding: 10px 3%;
+    }
+
+    .listing-item {
+        gap: 1em;
+        flex-direction: column;
+    }
+
+    .listing-item-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+    }
+
+    .listing-item-actions button {
+        padding: 0.4em 1em;
+    }
+
+    .listing-item-content {
+        flex-direction: column;
+    }
+
+    .listing-item img {
+        width: 100%;
+    }
+}

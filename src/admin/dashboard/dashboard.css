@@ -32,6 +32,8 @@
 
 .smallbar ul{
     display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
     gap: 10px;
 }
 
@@ -120,4 +122,36 @@
     background-color: var(--lightgray);
     border-radius: 10px;
     /* transform: scale(1.01); */
+}
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+    .dashboard-container {
+        padding: 1em 3%;
+    }
+
+    .smallbar ul {
+        gap: 1em;
+    }
+
+    .list-space {
+        padding: 5px;
+    }
+
+    .list-space-item a {
+        padding: 0.5em;
+    }
+
+    .list-space-item p {
+        font-size: 15px;
+    }
+
+    .list-space-item small {
+        font-size: 12px;
+    }
+
+    .reservation-item img {
+        height: 50px;
+        width: 50px;
+    }
+    
 }

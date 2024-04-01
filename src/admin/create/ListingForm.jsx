@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import './ListingForm.css'; // Import CSS file
 import PropTypes from 'prop-types';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const ListingForm = ({ onSubmit }) => {
+
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     title: '',
     description: '',
@@ -47,6 +51,10 @@ const ListingForm = ({ onSubmit }) => {
     e.preventDefault();
     onSubmit(formData);
   };
+
+  const cancelBtn = () => {
+    navigate(-1);
+  }
 
   return (
     <form className="listing-form" onSubmit={handleSubmit}>
@@ -199,7 +207,10 @@ const ListingForm = ({ onSubmit }) => {
           required
         />
       </label>
-      <button className="submit-btn" type="submit">Next</button>
+      <div className='action-btns'>
+        <button className="cancel-btn" onClick={cancelBtn}>Cancel</button>
+        <button className="submit-btn" type="submit">Next</button>
+      </div>
     </form>
   );
 };

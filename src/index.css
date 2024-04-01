@@ -7,6 +7,7 @@
   --primary-color: #3A86FF;
   --gold-color: #dfdb0a;
   --orange-red: #FB5607;
+  --red-color: #ff0000;
   --pink-color: #FF006E;
   --purple-color: #8338EC;
   --lightgray: #d6d5d5;
@@ -19,4 +20,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+  :root {
+    font-size: 11px;
+  }
 }

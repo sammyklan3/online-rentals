@@ -1,0 +1,91 @@
+/* Style fot the page container */
+.user-management-container {
+    padding: 10px 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.search-bar {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    border: 1px solid var(--lightgray);
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+}
+
+.search-bar p{
+    color: var(--gray-text);
+    font-size: 16px;
+}
+
+.user-management-container input {
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.search-bar input:focus + .search-bar {
+    border: 1px solid var(--purple-color);
+}
+
+.user-management-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* The user element styling */
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--lightgray);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.user:hover {
+    background-color: rgb(243, 240, 240);
+
+}
+
+.user-avatar {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.user-avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+    .user-management-container {
+        padding: 10px 3%;
+        gap: 1em;
+    }
+
+    .user-avatar img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin: 0;
+        border-radius: 20px;
+    }
+
+}

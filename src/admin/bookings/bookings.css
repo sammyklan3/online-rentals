@@ -1,0 +1,110 @@
+.bookings-container {
+    padding: 10px 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.bookings-container ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.booking-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: auto;
+    width: 70%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.listing-item-view {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.listing-item-view img {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.booking-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.booking-details p {
+    display: flex;
+    color: var(--gray-text);
+    align-items: center;
+    gap: 0.5em;
+}
+
+.booking-actions {
+    display: flex;
+    gap: 1em;
+}
+
+.booking-actions button {
+    font-family: "Poppins", sans-serif;
+    border: none;
+    cursor: pointer;
+    padding: 10px 1em;
+    border-radius: 20px;
+    color: white;
+}
+
+.booking-actions-confirmed{
+    background-color: var(--gray-text);
+}
+
+.declineBtn {
+    background-color: var(--gray-text);
+}
+
+.approveBtn {
+    background-color: var(--green-color);
+}
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+    .bookings-container {
+        padding: 10px 3%;
+    }
+
+    .listing-item-view img {
+        width: 100%;
+    }
+
+    .booking-item {
+        width: 100%;
+        margin: 0;
+    }
+
+    .pending {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .booking-actions button {
+        padding: 0.5em;
+    }
+
+    .booking-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .booking-actions-confirmed {
+        width: 100%;
+    }
+}
